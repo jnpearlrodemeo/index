@@ -1,0 +1,88 @@
+body{
+    margin:0;
+    font-family:Arial, sans-serif;
+    background:
+    linear-gradient(
+        135deg,
+        #1a002e,
+        #5a189a,
+        #7b2ff7,
+        #ff1493
+    );
+    color:white;
+}
+
+.idols-presentation{
+    padding:80px 8%;
+    text-align:center;
+}
+
+h1{
+    font-size:60px;
+    margin-bottom:10px;
+}
+
+.subtitle{
+    font-size:22px;
+    margin-bottom:50px;
+}
+
+.idol-container{
+    display:grid;
+    grid-template-columns:
+    repeat(auto-fit,minmax(300px,1fr));
+    gap:30px;
+}
+
+.idol-card{
+    background:rgba(255,255,255,0.12);
+    border-radius:30px;
+    padding:30px;
+    transition:.5s;
+}
+
+.idol-card:hover{
+    transform:translateY(-15px);
+    box-shadow:
+    0 0 30px #ff1493;
+}
+
+.idol-card img{
+    width:220px;
+    height:220px;
+    border-radius:50%;
+    object-fit:cover;
+    border:5px solid white;
+}
+
+.idol-card h2{
+    margin-top:20px;
+}
+
+.idol-card h3{
+    color:#ffd6ff;
+}
+
+.songs{
+    margin-top:20px;
+}
+
+.songs span{
+    display:inline-block;
+    background:#ff1493;
+    padding:10px 15px;
+    border-radius:20px;
+    margin:5px;
+}
+
+/* Button on main page */
+.idol-btn{
+    display:inline-block;
+    margin-top:20px;
+    padding:12px 25px;
+    background:#ff1493;
+    color:white;
+    text-decoration:none;
+    border-radius:30px;
+    font-weight:bold;
+}

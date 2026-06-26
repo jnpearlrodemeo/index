@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+    scroll-behavior:smooth;
+}
+
+body{
+    background:linear-gradient(-45deg,#16001f,#3d0066,#7b2ff7,#ff1493);
+    background-size:400% 400%;
+    animation:gradient 12s ease infinite;
+    color:#fff;
+}
+
+@keyframes gradient{
+    0%{background-position:0% 50%;}
+    50%{background-position:100% 50%;}
+    100%{background-position:0% 50%;}
+}
+
+/* NAVIGATION */
+
+header{
+    position:fixed;
+    width:100%;
+    z-index:1000;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+    background:rgba(0,0,0,0.3);
+    backdrop-filter:blur(15px);
+    box-shadow:0 5px 25px rgba(255,20,147,.4);
+}
+
+.logo{
+    font-size:30px;
+    font-weight:800;
+    text-shadow:0 0 20px #ff1493;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin-left:35px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:#fff;
+    font-weight:700;
+    transition:.4s;
+}
+
+nav ul li a:hover{
+    color:#ff8df7;
+}
+
+/* HERO */
+
+#home{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:20px;
+}
+
+.hero-content h1{
+    font-size:80px;
+    font-weight:900;
+    text-shadow:0 0 20px #ff1493;
+}
+
+.hero-content p{
+    font-size:20px;
+    margin:25px auto;
+    max-width:700px;
+}
+
+.btn{
+    margin-top:40px;
+}
+
+.btn a{
+    text-decoration:none;
+    color:#fff;
+    padding:16px 35px;
+    margin:10px;
+    border-radius:50px;
+    display:inline-block;
+    font-weight:700;
+    transition:.4s;
+}
+
+.blue{
+    background:#7b2ff7;
+}
+
+.pink{
+    background:#ff1493;
+}
+
+.btn a:hover{
+    transform:translateY(-8px);
+    box-shadow:0 0 30px #ff1493;
+}
+
+/* SECTIONS */
+
+section{
+    padding:90px 8%;
+}
+
+.title{
+    text-align:center;
+    margin-bottom:60px;
+}
+
+.title h2{
+    font-size:45px;
+    margin-bottom:10px;
+}
+
+/* CARDS */
+
+.card-container,
+.album-container,
+.bias-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+}
+
+.card,
+.album,
+.bias{
+    background:rgba(255,255,255,.12);
+    backdrop-filter:blur(15px);
+    border-radius:25px;
+    overflow:hidden;
+    text-align:center;
+    transition:.5s;
+}
+
+.card{
+    padding:40px;
+}
+
+.card:hover,
+.album:hover,
+.bias:hover{
+    transform:translateY(-15px);
+    box-shadow:0 0 30px #ff1493;
+}
+
+.card i{
+    font-size:50px;
+    color:#ff8df7;
+    margin-bottom:20px;
+}
+
+/* ALBUM */
+
+.album img{
+    width:100%;
+    height:300px;
+    object-fit:cover;
+}
+
+.album-content{
+    padding:25px;
+}
+
+/* BIAS */
+
+.bias{
+    padding:35px;
+}
+
+.bias img{
+    width:170px;
+    height:170px;
+    border-radius:50%;
+    object-fit:cover;
+    border:5px solid #ff1493;
+    margin-bottom:20px;
+}
+
+.social{
+    margin-top:20px;
+}
+
+.social i{
+    width:40px;
+    height:40px;
+    line-height:40px;
+    background:#fff;
+    color:#ff1493;
+    border-radius:50%;
+    margin:5px;
+    transition:.4s;
+}
+
+.social i:hover{
+    background:#ff1493;
+    color:#fff;
+}
+
+/* QUOTE */
+
+.quote{
+    text-align:center;
+}
+
+.quote h2{
+    font-size:40px;
+    text-shadow:0 0 20px #ff1493;
+}
+
+/* FOOTER */
+
+footer{
+    background:#0f0016;
+    text-align:center;
+    padding:50px;
+}
+
+footer h3{
+    color:#ff8df7;
+    margin-bottom:15px;
+}
+
+footer i{
+    font-size:25px;
+    margin:15px;
+    color:#ff8df7;
+}
+
+/* FLOATING EFFECT */
+
+.album img,
+.bias img{
+    animation:float 4s ease-in-out infinite;
+}
+
+@keyframes float{
+    0%{transform:translateY(0);}
+    50%{transform:translateY(-12px);}
+    100%{transform:translateY(0);}
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+    nav{
+        flex-direction:column;
+    }
+
+    nav ul{
+        margin-top:20px;
+    }
+
+    nav ul li{
+        margin:10px;
+    }
+
+    .hero-content h1{
+        font-size:50px;
+    }
+
+    .title h2{
+        font-size:35px;
+    }
+}

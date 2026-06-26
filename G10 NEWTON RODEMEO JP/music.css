@@ -1,0 +1,319 @@
+<!-- AMAZING MUSIC CARD -->
+<div class="card" onclick="openMusic()">
+    <i class="fas fa-music"></i>
+    <h3>Amazing Music</h3>
+    <p>Click to explore the world of K-POP music!</p>
+</div>
+
+<!-- K-POP PRESENTATION -->
+<div id="musicModal" class="modal">
+    <div class="modal-content">
+
+        <span class="close" onclick="closeMusic()">&times;</span>
+
+        <div class="presentation">
+
+            <h1>🎵 K-POP MUSIC 🎵</h1>
+            <h3>The Global Rhythm Revolution</h3>
+
+            <p class="intro">
+                K-pop, or Korean Pop Music, is one of the most influential music
+                industries in the world. It combines music, dance, fashion,
+                storytelling, and technology to create performances that inspire
+                millions of fans. K-pop has become a global phenomenon that
+                connects people of different cultures through the universal
+                language of music.
+            </p>
+
+            <!-- Section 1 -->
+            <div class="section-box">
+                <h2>🌎 What is K-POP?</h2>
+                <p>
+                    K-pop is a genre of popular music that originated in South Korea.
+                    It includes different musical styles such as Pop, Hip-Hop, R&B,
+                    Rock, EDM, and Ballads. K-pop is known for its catchy songs,
+                    synchronized choreography, colorful concepts, and talented idols.
+                </p>
+            </div>
+
+            <!-- Section 2 -->
+            <div class="section-box">
+                <h2>🎤 Why is K-POP Popular?</h2>
+
+                <div class="info-boxes">
+
+                    <div class="info">
+                        <i class="fas fa-music"></i>
+                        <h3>Unique Music</h3>
+                        <p>
+                            K-pop combines many genres to create fresh and exciting songs.
+                        </p>
+                    </div>
+
+                    <div class="info">
+                        <i class="fas fa-users"></i>
+                        <h3>Strong Fandom</h3>
+                        <p>
+                            Fans from all around the world support and connect with idols.
+                        </p>
+                    </div>
+
+                    <div class="info">
+                        <i class="fas fa-star"></i>
+                        <h3>Talented Idols</h3>
+                        <p>
+                            Idols train for years in singing, dancing, and performing.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Section 3 -->
+            <div class="section-box">
+                <h2>💜 Famous K-POP Groups</h2>
+
+                <div class="album-list">
+
+                    <div class="mini-card">
+                        💜 ENHYPEN
+                        <small>Known for powerful performances and storytelling.</small>
+                    </div>
+
+                    <div class="mini-card">
+                        🖤 BTS
+                        <small>One of the biggest groups that brought K-pop worldwide.</small>
+                    </div>
+
+                    <div class="mini-card">
+                        💎 SEVENTEEN
+                        <small>Known for self-produced music and amazing choreography.</small>
+                    </div>
+
+                    <div class="mini-card">
+                        🩷 BLACKPINK
+                        <small>Global girl group famous for fashion and powerful music.</small>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Section 4 -->
+            <div class="section-box">
+                <h2>🎶 Why Fans Love K-POP</h2>
+
+                <ul class="reasons">
+                    <li>✔ Inspiring songs and meaningful lyrics.</li>
+                    <li>✔ Incredible dance performances.</li>
+                    <li>✔ Beautiful concepts and fashion.</li>
+                    <li>✔ Positive messages about dreams and self-love.</li>
+                    <li>✔ A welcoming and supportive fandom community.</li>
+                </ul>
+            </div>
+
+            <!-- Section 5 -->
+            <div class="section-box">
+                <h2>🌟 The Impact of K-POP</h2>
+
+                <p>
+                    K-pop has changed the global music industry. It has broken language
+                    barriers and introduced Korean culture to millions of people.
+                    Through concerts, social media, and online communities, K-pop
+                    continues to unite fans from different countries and inspire young
+                    people to pursue their dreams.
+                </p>
+            </div>
+
+            <div class="quote">
+                "Music is our language, and K-pop is our universe." 💜
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<style>
+/* POPUP BACKGROUND */
+.modal{
+    display:none;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.85);
+    justify-content:center;
+    align-items:center;
+    z-index:9999;
+}
+
+/* PRESENTATION BOX */
+.modal-content{
+    width:90%;
+    max-width:1200px;
+    max-height:90vh;
+    overflow-y:auto;
+    padding:50px;
+    border-radius:35px;
+    background:
+    linear-gradient(
+        135deg,
+        #1b0036,
+        #4b0082,
+        #7b2ff7,
+        #ff1493
+    );
+    color:white;
+    box-shadow:
+    0 0 40px #ff1493,
+    0 0 80px #7b2ff7;
+}
+
+/* Scroll Bar */
+.modal-content::-webkit-scrollbar{
+    width:10px;
+}
+
+.modal-content::-webkit-scrollbar-thumb{
+    background:#ff8df7;
+    border-radius:10px;
+}
+
+/* Titles */
+.presentation h1{
+    font-size:65px;
+    text-align:center;
+    margin-bottom:15px;
+    text-shadow:
+    0 0 20px white,
+    0 0 40px #ff1493;
+}
+
+.presentation h3{
+    text-align:center;
+    margin-bottom:30px;
+    color:#ffd6ff;
+}
+
+.intro{
+    font-size:20px;
+    line-height:1.9;
+    text-align:center;
+    margin-bottom:50px;
+}
+
+/* Sections */
+.section-box{
+    background:rgba(255,255,255,.15);
+    padding:35px;
+    border-radius:25px;
+    margin-bottom:35px;
+    backdrop-filter:blur(10px);
+}
+
+.section-box h2{
+    margin-bottom:20px;
+    color:#ffd6ff;
+}
+
+.section-box p{
+    line-height:1.9;
+    font-size:18px;
+}
+
+/* Information Cards */
+.info-boxes{
+    display:grid;
+    grid-template-columns:
+    repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.info{
+    background:rgba(255,255,255,.15);
+    padding:25px;
+    border-radius:20px;
+    text-align:center;
+    transition:.5s;
+}
+
+.info:hover{
+    transform:translateY(-10px);
+    box-shadow:0 0 25px white;
+}
+
+.info i{
+    font-size:45px;
+    margin-bottom:15px;
+    color:#ffd6ff;
+}
+
+/* Group Cards */
+.album-list{
+    display:grid;
+    grid-template-columns:
+    repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.mini-card{
+    background:rgba(255,255,255,.15);
+    padding:25px;
+    border-radius:20px;
+    text-align:center;
+    font-size:22px;
+    font-weight:700;
+    transition:.5s;
+}
+
+.mini-card:hover{
+    transform:scale(1.05);
+    box-shadow:0 0 25px white;
+}
+
+.mini-card small{
+    display:block;
+    margin-top:15px;
+    font-size:15px;
+    font-weight:400;
+}
+
+/* Reasons */
+.reasons{
+    line-height:2;
+    font-size:18px;
+    padding-left:20px;
+}
+
+/* Quote */
+.quote{
+    text-align:center;
+    margin-top:50px;
+    font-size:30px;
+    font-style:italic;
+    text-shadow:0 0 20px white;
+}
+
+/* Close Button */
+.close{
+    position:absolute;
+    top:25px;
+    right:40px;
+    font-size:45px;
+    cursor:pointer;
+}
+
+.close:hover{
+    color:#ffd6ff;
+}
+</style>
+
+<script>
+function openMusic(){
+    document.getElementById("musicModal").style.display = "flex";
+}
+
+function closeMusic(){
+    document.getElementById("musicModal").style.display = "none";
+}
+</script>

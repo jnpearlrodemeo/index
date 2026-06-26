@@ -1,0 +1,89 @@
+body{
+    margin:0;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:
+    linear-gradient(
+        135deg,
+        #14001f,
+        #32004d,
+        #5a189a,
+        #ff1493
+    );
+    font-family:'Poppins',sans-serif;
+}
+
+.heart-container{
+    text-align:center;
+    color:white;
+}
+
+/* HEART */
+.heart{
+    position:relative;
+    width:150px;
+    height:150px;
+    background:#ff1493;
+    margin:0 auto 40px;
+    transform:rotate(-45deg);
+    animation:heartbeat 1.5s infinite;
+    box-shadow:
+        0 0 30px #ff1493,
+        0 0 60px #ff1493,
+        0 0 90px #ff1493;
+}
+
+.heart::before,
+.heart::after{
+    content:"";
+    position:absolute;
+    width:150px;
+    height:150px;
+    background:#ff1493;
+    border-radius:50%;
+}
+
+.heart::before{
+    top:-75px;
+    left:0;
+}
+
+.heart::after{
+    top:0;
+    left:75px;
+}
+
+/* BEATING ANIMATION */
+@keyframes heartbeat{
+    0%{
+        transform:rotate(-45deg) scale(1);
+    }
+    25%{
+        transform:rotate(-45deg) scale(1.15);
+    }
+    50%{
+        transform:rotate(-45deg) scale(1);
+    }
+    75%{
+        transform:rotate(-45deg) scale(1.15);
+    }
+    100%{
+        transform:rotate(-45deg) scale(1);
+    }
+}
+
+/* TEXT */
+h2{
+    font-size:50px;
+    margin-bottom:10px;
+    text-shadow:
+        0 0 20px #fff,
+        0 0 30px #ff1493;
+}
+
+p{
+    font-size:22px;
+    color:#ffe4fa;
+}
